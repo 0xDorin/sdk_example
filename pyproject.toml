@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nadfun-sdk"
+version = "0.1.0"
+description = "Simple blockchain SDK for Nadfun DEX & Bonding Curve"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [
+    { name = "Your Name", email = "you@example.com" }
+]
+dependencies = [
+    "web3>=6.0.0",
+    "eth-account>=0.9.0"
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
